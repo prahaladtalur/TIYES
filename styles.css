@@ -224,6 +224,57 @@ section {
 
 /* chapters */
 
+.world-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: clamp(2.5rem, 6vh, 4.5rem);
+}
+
+.map-grid path {
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 1;
+}
+
+.map-grid .map-equator {
+  stroke: rgba(255, 255, 255, 0.2);
+}
+
+.map-land path {
+  fill: rgba(255, 255, 255, 0.06);
+  stroke: rgba(255, 255, 255, 0.55);
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+}
+
+.map-pin .pin-dot {
+  fill: var(--sun);
+}
+
+.map-pin .pin-ring {
+  fill: none;
+  stroke: var(--sun);
+  stroke-width: 1.2;
+  opacity: 0.5;
+  transition: opacity 0.25s ease;
+}
+
+.map-pin text {
+  fill: var(--accent);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: fill 0.25s ease;
+}
+
+.map-pin:hover text {
+  fill: var(--sun);
+}
+
+.map-pin:hover .pin-ring {
+  opacity: 1;
+}
+
 .chapter-list {
   list-style: none;
 }
@@ -332,12 +383,188 @@ a.chapter-city:hover::after {
   letter-spacing: -0.01em;
 }
 
-.team-role a {
+.team-role a,
+.team-name a {
   color: inherit;
   text-decoration: none;
 }
 
-.team-role a:hover {
+.team-role a:hover,
+.team-name a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--sun);
+}
+
+.team-more {
+  margin-top: 2rem;
+}
+
+.team-more a {
+  color: var(--sun);
+  text-decoration: none;
+}
+
+.team-more a:hover {
+  text-decoration: underline;
+}
+
+/* photo slots */
+
+.photo-slot {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.photo-slot svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-slot svg path {
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-width: 1;
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.photo-tag {
+  position: absolute;
+  left: 0.6rem;
+  bottom: 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sun);
+}
+
+img.photo-slot {
+  object-fit: cover;
+}
+
+/* founders grid (team page) */
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.founder {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.founder .photo-slot {
+  margin-bottom: 1.1rem;
+  transition: border-color 0.25s ease;
+}
+
+.founder:hover .photo-slot {
+  border-color: var(--sun);
+}
+
+.founder-name {
+  display: block;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.founder:hover .founder-name {
+  color: var(--sun);
+}
+
+.founder-role {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.9375rem;
+}
+
+.founder-city {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.9375rem;
+  color: var(--sun);
+}
+
+/* role hierarchy (team page) */
+
+.city-teams .mission-line {
+  margin-bottom: clamp(2rem, 5vh, 3.5rem);
+}
+
+.role-list {
+  list-style: none;
+}
+
+.role-list li {
+  display: grid;
+  grid-template-columns: 1.2fr 1.4fr auto;
+  gap: 1rem 3rem;
+  align-items: baseline;
+  padding: clamp(1.1rem, 2.5vh, 1.8rem) 0;
+  border-top: 1px solid var(--accent);
+}
+
+.role-list li:last-child {
+  border-bottom: 1px solid var(--accent);
+}
+
+.role-list h2 {
+  font-size: clamp(1.15rem, 1.8vw, 1.6rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.role-list .role-tier-1 h2 {
+  font-size: clamp(1.7rem, 3vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.role-list .role-tier-2 h2 {
+  font-size: clamp(1.4rem, 2.3vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.role-list p {
+  max-width: var(--measure);
+}
+
+.role-open {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sun);
+  border: 1px solid var(--sun);
+  padding: 0.25rem 0.6rem;
+  white-space: nowrap;
+}
+
+/* member profile pages */
+
+.profile {
+  display: grid;
+  grid-template-columns: minmax(200px, 300px) 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.profile-bio .mission-line a {
+  color: var(--sun);
+  text-decoration: none;
+}
+
+.profile-bio .mission-line a:hover {
   text-decoration: underline;
 }
 
@@ -468,5 +695,26 @@ a.chapter-city:hover::after {
 
   .strip-track {
     gap: 1.5rem;
+  }
+
+  .founder-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .role-list li {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .profile {
+    grid-template-columns: 1fr;
+  }
+
+  .profile .photo-slot {
+    max-width: 260px;
+  }
+
+  .map-pin text {
+    font-size: 26px;
   }
 }
