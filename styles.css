@@ -1,8 +1,8 @@
 :root {
   --ink: #FFFFFF;
-  --paper: #1F3251;
+  --paper: #113156;
   --accent: #FFFFFF;
-  --sun: #DEA94E;
+  --sun: #F1BC55;
   --sun-deep: #C9922F;
   --measure: 34rem;
   --pad: clamp(1.25rem, 4vw, 4rem);
@@ -61,16 +61,8 @@ body {
 }
 
 .mark {
-  width: 27px;
-  height: 27px;
-}
-
-.mark-gold {
-  stroke: var(--sun);
-}
-
-.mark-navy {
-  stroke: var(--accent);
+  width: 30px;
+  height: auto;
 }
 
 .nav-links {
@@ -121,15 +113,8 @@ body {
   position: absolute;
   top: clamp(5rem, 14vh, 8rem);
   right: var(--pad);
-  width: clamp(120px, 15vw, 190px);
+  width: clamp(130px, 16vw, 200px);
   height: auto;
-}
-
-.crest-text {
-  font-size: 10.5px;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  fill: var(--accent);
 }
 
 .hero-headline {
