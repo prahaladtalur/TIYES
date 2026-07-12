@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TIYES — The International Youth Engineering Society</title>
+  <meta name="description" content="TIYES is a student-led international engineering society. Research, competitions, and education, run by students.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="#top" class="nav-mark">TIYES</a>
+    <div class="nav-links">
+      <a href="#chapters">Chapters</a>
+      <a href="#join">Join</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <h1 class="hero-headline">A student-led engineering society for the whole&nbsp;world.</h1>
+    <p class="hero-subline">Research, competitions, and education, run by students in <span data-city-count>4</span> cities.</p>
+  </header>
+
+  <!-- Schematic strip: translates horizontally with scroll -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track" data-strip>
+      <!-- Set 1 -->
+      <svg class="schematic" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+        <!-- spur gear -->
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="100" cy="60" r="34"/>
+          <circle cx="100" cy="60" r="10"/>
+          <circle cx="100" cy="60" r="26" stroke-dasharray="3 3"/>
+          <g>
+            <path d="M100 22v-8M100 98v8M62 60h-8M138 60h8"/>
+            <path d="M73 33l-6-6M127 87l6 6M127 33l6-6M73 87l-6 6"/>
+            <path d="M85 26l-3-8M115 94l3 8M115 26l3-8M85 94l-3 8"/>
+            <path d="M66 45l-8-3M134 75l8 3M134 45l8-3M66 75l-8 3"/>
+          </g>
+          <!-- dimension line -->
+          <path d="M58 116h84M58 112v8M142 112v8"/>
+          <path d="M58 116l6-2.5v5zM142 116l-6-2.5v5z" fill="currentColor" stroke="none"/>
+        </g>
+        <text x="100" y="111" class="dim-label" text-anchor="middle">ø 68</text>
+      </svg>
+
+      <svg class="schematic" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+        <!-- bridge truss -->
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M20 80h160"/>
+          <path d="M40 80l20-32h80l20 32"/>
+          <path d="M60 48l20 32 20-32 20 32 20-32"/>
+          <path d="M60 48v32M100 48v32M140 48v32"/>
+          <path d="M30 80v14M170 80v14"/>
+          <path d="M22 94h16M162 94h16"/>
+          <!-- dimension -->
+          <path d="M40 108h120M40 104v8M160 104v8"/>
+          <path d="M40 108l6-2.5v5zM160 108l-6-2.5v5z" fill="currentColor" stroke="none"/>
+        </g>
+        <text x="100" y="122" class="dim-label" text-anchor="middle">span 120</text>
+      </svg>
+
+      <svg class="schematic" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+        <!-- circuit -->
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M25 40h25l5-8 8 16 8-16 8 16 8-16 5 8h23"/>
+          <path d="M115 40h20M143 28v24M151 28v24M151 40h24"/>
+          <path d="M175 40v50h-60"/>
+          <path d="M25 40v50h50"/>
+          <path d="M75 82v16M83 76v28M83 90h32"/>
+          <circle cx="25" cy="40" r="2.5" fill="currentColor"/>
+          <circle cx="175" cy="40" r="2.5" fill="currentColor"/>
+        </g>
+        <text x="72" y="24" class="dim-label" text-anchor="middle">R1</text>
+        <text x="147" y="20" class="dim-label" text-anchor="middle">C1</text>
+      </svg>
+
+      <svg class="schematic" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+        <!-- wind turbine -->
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M100 48v58"/>
+          <path d="M84 106h32"/>
+          <circle cx="100" cy="44" r="4"/>
+          <path d="M100 40c-2-12-1-24 4-32-6 4-10 14-11 26"/>
+          <path d="M104 46c11 5 20 13 23 22-7-2-16-9-21-19"/>
+          <path d="M96 46c-11 5-20 13-23 22 7-2 16-9 21-19"/>
+          <!-- dimension -->
+          <path d="M132 44v62M128 44h8M128 106h8"/>
+          <path d="M132 44l-2.5 6h5zM132 106l-2.5-6h5z" fill="currentColor" stroke="none"/>
+        </g>
+        <text x="146" y="78" class="dim-label" text-anchor="middle">62</text>
+      </svg>
+
+      <svg class="schematic" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+        <!-- CAD cube, isometric -->
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M100 26l34 18v36l-34 18-34-18V44z"/>
+          <path d="M100 62L66 44M100 62l34-18M100 62v36"/>
+          <path d="M66 80l34-18 34 18M100 26v36" stroke-dasharray="3 3"/>
+          <!-- dimension -->
+          <path d="M144 44v36M140 44h8M140 80h8"/>
+          <path d="M144 44l-2.5 6h5zM144 80l-2.5-6h5z" fill="currentColor" stroke="none"/>
+        </g>
+        <text x="158" y="65" class="dim-label" text-anchor="middle">40</text>
+      </svg>
+
+      <!-- Set 2 (duplicate for width) -->
+      <svg class="schematic" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="100" cy="60" r="34"/>
+          <circle cx="100" cy="60" r="10"/>
+          <circle cx="100" cy="60" r="26" stroke-dasharray="3 3"/>
+          <g>
+            <path d="M100 22v-8M100 98v8M62 60h-8M138 60h8"/>
+            <path d="M73 33l-6-6M127 87l6 6M127 33l6-6M73 87l-6 6"/>
+            <path d="M85 26l-3-8M115 94l3 8M115 26l3-8M85 94l-3 8"/>
+            <path d="M66 45l-8-3M134 75l8 3M134 45l8-3M66 75l-8 3"/>
+          </g>
+          <path d="M58 116h84M58 112v8M142 112v8"/>
+          <path d="M58 116l6-2.5v5zM142 116l-6-2.5v5z" fill="currentColor" stroke="none"/>
+        </g>
+        <text x="100" y="111" class="dim-label" text-anchor="middle">ø 68</text>
+      </svg>
+
+      <svg class="schematic" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M20 80h160"/>
+          <path d="M40 80l20-32h80l20 32"/>
+          <path d="M60 48l20 32 20-32 20 32 20-32"/>
+          <path d="M60 48v32M100 48v32M140 48v32"/>
+          <path d="M30 80v14M170 80v14"/>
+          <path d="M22 94h16M162 94h16"/>
+          <path d="M40 108h120M40 104v8M160 104v8"/>
+          <path d="M40 108l6-2.5v5zM160 108l-6-2.5v5z" fill="currentColor" stroke="none"/>
+        </g>
+        <text x="100" y="122" class="dim-label" text-anchor="middle">span 120</text>
+      </svg>
+
+      <svg class="schematic" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M25 40h25l5-8 8 16 8-16 8 16 8-16 5 8h23"/>
+          <path d="M115 40h20M143 28v24M151 28v24M151 40h24"/>
+          <path d="M175 40v50h-60"/>
+          <path d="M25 40v50h50"/>
+          <path d="M75 82v16M83 76v28M83 90h32"/>
+          <circle cx="25" cy="40" r="2.5" fill="currentColor"/>
+          <circle cx="175" cy="40" r="2.5" fill="currentColor"/>
+        </g>
+        <text x="72" y="24" class="dim-label" text-anchor="middle">R1</text>
+        <text x="147" y="20" class="dim-label" text-anchor="middle">C1</text>
+      </svg>
+
+      <svg class="schematic" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M100 48v58"/>
+          <path d="M84 106h32"/>
+          <circle cx="100" cy="44" r="4"/>
+          <path d="M100 40c-2-12-1-24 4-32-6 4-10 14-11 26"/>
+          <path d="M104 46c11 5 20 13 23 22-7-2-16-9-21-19"/>
+          <path d="M96 46c-11 5-20 13-23 22 7-2 16-9 21-19"/>
+          <path d="M132 44v62M128 44h8M128 106h8"/>
+          <path d="M132 44l-2.5 6h5zM132 106l-2.5-6h5z" fill="currentColor" stroke="none"/>
+        </g>
+        <text x="146" y="78" class="dim-label" text-anchor="middle">62</text>
+      </svg>
+
+      <svg class="schematic" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M100 26l34 18v36l-34 18-34-18V44z"/>
+          <path d="M100 62L66 44M100 62l34-18M100 62v36"/>
+          <path d="M66 80l34-18 34 18M100 26v36" stroke-dasharray="3 3"/>
+          <path d="M144 44v36M140 44h8M140 80h8"/>
+          <path d="M144 44l-2.5 6h5zM144 80l-2.5-6h5z" fill="currentColor" stroke="none"/>
+        </g>
+        <text x="158" y="65" class="dim-label" text-anchor="middle">40</text>
+      </svg>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="mission">
+      <p class="mission-line reveal">To advance youth exposure to engineering through research, innovation, education, competition and collaboration.</p>
+    </section>
+
+    <section class="what" id="what">
+      <p class="section-label reveal">What we do</p>
+      <div class="what-item reveal">
+        <h2>Research</h2>
+        <p>Student-led international research teams. University partnerships.</p>
+      </div>
+      <div class="what-item reveal">
+        <h2>Competitions</h2>
+        <p>International engineering olympiad. CAD, AI and software, sustainable energy, hackathons.</p>
+      </div>
+      <div class="what-item reveal">
+        <h2>Education</h2>
+        <p>Workshops and chapter-run events.</p>
+      </div>
+    </section>
+
+    <section class="chapters" id="chapters">
+      <p class="section-label reveal">City chapters</p>
+      <ol class="chapter-list">
+        <li class="reveal"><span class="chapter-index">01</span><span class="chapter-city" data-city>Dallas</span></li>
+        <li class="reveal"><span class="chapter-index">02</span><span class="chapter-city" data-city>Dubai</span></li>
+        <li class="reveal"><span class="chapter-index">03</span><span class="chapter-city" data-city>Seattle</span></li>
+        <li class="reveal"><span class="chapter-index">04</span><span class="chapter-city" data-city>Vienna VA</span></li>
+        <li class="reveal chapter-next"><span class="chapter-index">05</span><a href="#join" class="chapter-city">Your city next</a></li>
+      </ol>
+    </section>
+
+    <section class="team">
+      <p class="section-label reveal">The founding team</p>
+      <ul class="team-list">
+        <li class="reveal"><span class="team-name">Ahan</span><span class="team-city">Dallas</span><span class="team-role">Co-chair</span></li>
+        <li class="reveal"><span class="team-name">Rajdeep</span><span class="team-city">Dubai</span><span class="team-role">Co-chair</span></li>
+        <li class="reveal"><span class="team-name">Prahalad</span><span class="team-city">Seattle</span><span class="team-role">Chief of strategy</span></li>
+        <li class="reveal"><span class="team-name">Fabian</span><span class="team-city">Vienna VA</span><span class="team-role">Chief of research + development</span></li>
+      </ul>
+    </section>
+
+    <section class="join" id="join">
+      <p class="section-label reveal">Start a chapter</p>
+      <div class="join-lines">
+        <p class="reveal">Get five people who want to build things.</p>
+        <p class="reveal">Follow the chapter handbook.</p>
+        <p class="reveal">Apply with the form. We reply to every one.</p>
+      </div>
+      <a class="cta-button reveal" href="#" data-form-link target="_blank" rel="noopener">Apply to start a chapter</a>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contact">
+    <a class="footer-cta" href="#" data-form-link target="_blank" rel="noopener">Start a<br>chapter</a>
+    <div class="footer-meta">
+      <a href="mailto:hello@tiyes.org">hello@tiyes.org</a>
+      <span>The International Youth Engineering Society</span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
