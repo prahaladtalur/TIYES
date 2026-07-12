@@ -1,7 +1,8 @@
 :root {
   --ink: #111111;
-  --paper: #FAFAF7;
-  --accent: #FF4D00;
+  --paper: #FFFFFF;
+  --accent: #1E3FDB;
+  --sun: #FFC400;
   --measure: 34rem;
   --pad: clamp(1.25rem, 4vw, 4rem);
 }
@@ -26,8 +27,8 @@ body {
 }
 
 ::selection {
-  background: var(--accent);
-  color: var(--paper);
+  background: var(--sun);
+  color: var(--ink);
 }
 
 /* ---------- nav ---------- */
@@ -123,8 +124,8 @@ body {
 
 .strip {
   overflow: hidden;
-  border-top: 1px solid var(--ink);
-  border-bottom: 1px solid var(--ink);
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
   padding: 1.5rem 0;
 }
 
@@ -138,14 +139,14 @@ body {
 .schematic {
   width: clamp(140px, 16vw, 210px);
   height: auto;
-  color: var(--ink);
+  color: var(--accent);
   flex-shrink: 0;
 }
 
 .dim-label {
   font-family: inherit;
   font-size: 9px;
-  fill: var(--accent);
+  fill: var(--ink);
   letter-spacing: 0.08em;
 }
 
@@ -181,11 +182,11 @@ section {
   grid-template-columns: 1fr 1.4fr;
   gap: 1rem 4rem;
   padding: clamp(1.75rem, 4vh, 3rem) 0;
-  border-top: 1px solid var(--ink);
+  border-top: 1px solid var(--accent);
 }
 
 .what-item:last-of-type {
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--accent);
 }
 
 .what-item h2 {
@@ -211,11 +212,11 @@ section {
   align-items: baseline;
   gap: clamp(1rem, 3vw, 2.5rem);
   padding: clamp(0.8rem, 2vh, 1.4rem) 0;
-  border-top: 1px solid var(--ink);
+  border-top: 1px solid var(--accent);
 }
 
 .chapter-list li:last-child {
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--accent);
 }
 
 .chapter-index {
@@ -244,8 +245,8 @@ section {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 3px;
-  background: currentColor;
+  height: 4px;
+  background: var(--sun);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease;
@@ -268,11 +269,11 @@ section {
   grid-template-columns: 1fr 1fr 1.6fr;
   gap: 1rem 2rem;
   padding: 1.1rem 0;
-  border-top: 1px solid var(--ink);
+  border-top: 1px solid var(--accent);
 }
 
 .team-list li:last-child {
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--accent);
 }
 
 .team-name {
@@ -312,15 +313,15 @@ section {
 }
 
 .cta-button:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--paper);
+  background: var(--sun);
+  border-color: var(--sun);
+  color: var(--ink);
 }
 
 /* ---------- footer ---------- */
 
 .footer {
-  background: var(--ink);
+  background: var(--accent);
   color: var(--paper);
   padding: clamp(5rem, 14vh, 10rem) var(--pad) clamp(2rem, 5vh, 3.5rem);
 }
@@ -337,7 +338,7 @@ section {
 }
 
 .footer-cta:hover {
-  color: var(--accent);
+  color: var(--sun);
 }
 
 .footer-meta {
@@ -355,7 +356,7 @@ section {
 }
 
 .footer-meta span {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 /* ---------- reveal animations ---------- */
