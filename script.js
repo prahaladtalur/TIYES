@@ -8,11 +8,6 @@ document.querySelectorAll("[data-form-link]").forEach((link) => {
   link.href = CHAPTER_FORM_URL;
 });
 
-// Fill the city count in the hero subline from the chapter list
-const cityCount = document.querySelectorAll("[data-city]").length;
-const countEl = document.querySelector("[data-city-count]");
-if (countEl) countEl.textContent = cityCount;
-
 // Scroll-triggered reveals, once per element
 const revealEls = document.querySelectorAll(".reveal");
 if (prefersReducedMotion) {
