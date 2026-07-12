@@ -109,6 +109,10 @@ body {
   padding-bottom: clamp(2rem, 6vh, 5rem);
 }
 
+.chapter-hero {
+  min-height: 58vh;
+}
+
 .hero-crest {
   position: absolute;
   top: clamp(5rem, 14vh, 8rem);
@@ -263,6 +267,28 @@ section {
   color: var(--sun);
 }
 
+a.chapter-city {
+  position: relative;
+}
+
+a.chapter-city::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--sun);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+a.chapter-city:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 .chapter-next a::after {
   content: "";
   position: absolute;
@@ -304,6 +330,15 @@ section {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: -0.01em;
+}
+
+.team-role a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.team-role a:hover {
+  text-decoration: underline;
 }
 
 .team-city {
@@ -411,7 +446,7 @@ section {
 
   .nav-links a::after,
   .footer-meta a::after,
-  .chapter-next a::after,
+  a.chapter-city::after,
   .cta-button,
   .footer-cta {
     transition: none;
