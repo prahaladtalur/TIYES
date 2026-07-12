@@ -1,8 +1,9 @@
 :root {
-  --ink: #16213C;
-  --paper: #FFFFFF;
-  --accent: #1F3251;
-  --sun: #C9922F;
+  --ink: #FFFFFF;
+  --paper: #1F3251;
+  --accent: #FFFFFF;
+  --sun: #DEA94E;
+  --sun-deep: #C9922F;
   --measure: 34rem;
   --pad: clamp(1.25rem, 4vw, 4rem);
 }
@@ -28,7 +29,7 @@ body {
 
 ::selection {
   background: var(--sun);
-  color: var(--ink);
+  color: var(--paper);
 }
 
 /* ---------- nav ---------- */
@@ -43,7 +44,6 @@ body {
   justify-content: space-between;
   align-items: baseline;
   padding: 1.1rem var(--pad);
-  mix-blend-mode: darken;
 }
 
 .nav a {
@@ -331,7 +331,7 @@ section {
 .cta-button:hover {
   background: var(--sun);
   border-color: var(--sun);
-  color: var(--ink);
+  color: var(--paper);
 }
 
 /* ---------- footer ---------- */
@@ -354,7 +354,7 @@ section {
 }
 
 .footer-cta:hover {
-  color: var(--sun);
+  color: var(--sun-deep);
 }
 
 .footer-meta {
