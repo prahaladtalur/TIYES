@@ -586,6 +586,21 @@ img.photo-slot {
   margin-top: 0.6em;
 }
 
+.join-lines .join-contact {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  margin-top: 1.8rem;
+}
+
+.join-contact a {
+  color: var(--sun);
+  text-decoration: none;
+}
+
+.join-contact a:hover {
+  text-decoration: underline;
+}
+
 .cta-button {
   display: inline-block;
   margin-top: clamp(2.5rem, 6vh, 4rem);
