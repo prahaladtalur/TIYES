@@ -232,18 +232,18 @@ section {
 }
 
 .map-grid path {
-  stroke: rgba(255, 255, 255, 0.1);
+  stroke: rgba(255, 255, 255, 0.08);
   stroke-width: 1;
 }
 
 .map-grid .map-equator {
-  stroke: rgba(255, 255, 255, 0.2);
+  stroke: rgba(255, 255, 255, 0.16);
 }
 
 .map-land path {
-  fill: rgba(255, 255, 255, 0.06);
-  stroke: rgba(255, 255, 255, 0.55);
-  stroke-width: 1.2;
+  fill: rgba(255, 255, 255, 0.045);
+  stroke: rgba(255, 255, 255, 0.85);
+  stroke-width: 1;
   stroke-linejoin: round;
 }
 
@@ -264,6 +264,10 @@ section {
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 0.02em;
+  paint-order: stroke;
+  stroke: var(--paper);
+  stroke-width: 5px;
+  stroke-linejoin: round;
   transition: fill 0.25s ease;
 }
 
@@ -550,6 +554,19 @@ img.photo-slot {
   white-space: nowrap;
 }
 
+/* founders letter */
+
+.letter-body .mission-line + .mission-line {
+  margin-top: 1em;
+}
+
+.letter-sign {
+  margin-top: 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--sun);
+}
+
 /* member profile pages */
 
 .profile {
@@ -584,6 +601,18 @@ img.photo-slot {
 
 .join-lines p + p {
   margin-top: 0.6em;
+}
+
+.join-lines a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--sun);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.join-lines a:hover {
+  color: var(--sun);
 }
 
 .join-lines .join-contact {
