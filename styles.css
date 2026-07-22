@@ -450,6 +450,10 @@ img.photo-slot {
   object-fit: cover;
 }
 
+.portrait-prahalad {
+  object-position: 38% center;
+}
+
 /* founders grid (team page) */
 
 .founder-grid {
