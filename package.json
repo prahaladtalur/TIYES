@@ -4,6 +4,17 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "lint:js": "eslint script.js scripts",
+    "lint:css": "stylelint styles.css",
+    "lint:html": "htmlhint *.html",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.7.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard": "^40.0.0"
   }
 }

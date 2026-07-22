@@ -1,7 +1,7 @@
 :root {
-  --ink: #FFFFFF;
+  --ink: #FFF;
   --paper: #113156;
-  --accent: #FFFFFF;
+  --accent: #FFF;
   --sun: #F1BC55;
   --sun-deep: #C9922F;
   --measure: 34rem;
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
   background: var(--paper);
   color: var(--ink);
   font-size: 1.0625rem;
@@ -85,7 +85,7 @@ body {
   bottom: -3px;
   width: 100%;
   height: 1.5px;
-  background: currentColor;
+  background: currentcolor;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease;
@@ -232,17 +232,17 @@ section {
 }
 
 .map-grid path {
-  stroke: rgba(255, 255, 255, 0.08);
+  stroke: rgb(255 255 255 / 8%);
   stroke-width: 1;
 }
 
 .map-grid .map-equator {
-  stroke: rgba(255, 255, 255, 0.16);
+  stroke: rgb(255 255 255 / 16%);
 }
 
 .map-land path {
-  fill: rgba(255, 255, 255, 0.045);
-  stroke: rgba(255, 255, 255, 0.85);
+  fill: rgb(255 255 255 / 4.5%);
+  stroke: rgb(255 255 255 / 85%);
   stroke-width: 1;
   stroke-linejoin: round;
 }
@@ -418,7 +418,7 @@ a.chapter-city:hover::after {
   position: relative;
   display: block;
   aspect-ratio: 4 / 5;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgb(255 255 255 / 60%);
 }
 
 .photo-slot svg {
@@ -429,7 +429,7 @@ a.chapter-city:hover::after {
 }
 
 .photo-slot svg path {
-  stroke: rgba(255, 255, 255, 0.25);
+  stroke: rgb(255 255 255 / 25%);
   stroke-width: 1;
   fill: none;
   vector-effect: non-scaling-stroke;
@@ -730,7 +730,7 @@ img.photo-slot {
 
 /* ---------- mobile ---------- */
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
   .hero-headline {
     font-size: clamp(2.6rem, 10vw, 4rem);
   }
