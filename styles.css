@@ -558,6 +558,23 @@ img.photo-slot {
   white-space: nowrap;
 }
 
+.role-filled {
+  display: block;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.role-filled-city {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--sun);
+}
+
 /* founders letter */
 
 .letter-body .mission-line + .mission-line {
