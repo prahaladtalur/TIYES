@@ -458,7 +458,7 @@ img.photo-slot {
 
 .founder-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: clamp(1.25rem, 3vw, 2.5rem);
 }
 
