@@ -11,7 +11,7 @@ await mkdir(client, { recursive: true });
 for (const entry of [
   "index.html", "styles.css", "script.js", "logo.png", "ahan.html",
   "dallas.html", "dubai.html", "fabian.html", "handbook.html",
-  "prahalad.html", "rajdeep.html", "seattle.html", "team.html", "washington-dc.html"
+  "prahalad.html", "rajdeep.html", "seattle.html", "team.html", "washington-dc.html", "board-application.html"
 ]) {
   await cp(join(root, entry), join(client, entry));
 }

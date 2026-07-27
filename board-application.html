@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>International Board Application — TIYES</title>
+  <meta name="description" content="Apply to join the TIYES International Board.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav-mark"><img class="mark" src="logo.png" alt="" width="400" height="391">TIYES</a>
+    <div class="nav-links"><a href="index.html#chapters">Chapters</a><a href="team.html">Team</a><a href="index.html#contact">Contact</a></div>
+  </nav>
+
+  <header class="hero chapter-hero">
+    <p class="section-label">International board</p>
+    <h1 class="hero-headline">Apply.</h1>
+    <p class="hero-subline">Tell us where you can make the biggest difference. Choose a first and second role.</p>
+  </header>
+
+  <main>
+    <section class="application">
+      <form class="application-form" action="mailto:hello@tiyes.org" method="post" enctype="text/plain">
+        <div class="form-grid">
+          <label>Full name<input name="Full name" autocomplete="name" required></label>
+          <label>Email address<input type="email" name="Email" autocomplete="email" required></label>
+          <label>School or organization<input name="School or organization" required></label>
+          <label>City and country<input name="City and country" required></label>
+        </div>
+
+        <label>First-choice role
+          <select name="First-choice role" required>
+            <option value="" selected disabled>Select a role</option>
+            <option>President of the International Board</option>
+            <option>Director of International Tech</option>
+            <option>Director of International Research</option>
+            <option>Director of International Competitions</option>
+            <option>Director of International Development</option>
+            <option>Director of International Education</option>
+            <option>Director of International Events</option>
+            <option>Director of International Communications</option>
+          </select>
+        </label>
+
+        <label>Second-choice role
+          <select name="Second-choice role" required>
+            <option value="" selected disabled>Select a role</option>
+            <option>President of the International Board</option>
+            <option>Director of International Tech</option>
+            <option>Director of International Research</option>
+            <option>Director of International Competitions</option>
+            <option>Director of International Development</option>
+            <option>Director of International Education</option>
+            <option>Director of International Events</option>
+            <option>Director of International Communications</option>
+          </select>
+        </label>
+
+        <label>What would make you the perfect fit for your first-choice role?<textarea name="Why I am a fit" rows="6" required></textarea></label>
+        <label>How many tennis balls could you fit in your bedroom?<textarea name="Tennis balls" rows="4" required></textarea></label>
+        <p class="form-note">Submitting opens a pre-addressed email to TIYES with your application.</p>
+        <button class="cta-button" type="submit">Send application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact"><a class="footer-cta" href="team.html">The<br>team</a><div class="footer-meta"><a href="mailto:hello@tiyes.org">hello@tiyes.org</a><a href="handbook.html">Handbook</a><span>The International Youth Engineering Society, a 501(c)(3) nonprofit</span></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

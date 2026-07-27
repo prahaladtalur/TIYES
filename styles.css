@@ -592,6 +592,45 @@ img.photo-slot {
   white-space: nowrap;
 }
 
+.board-apply {
+  margin-top: clamp(2rem, 5vh, 3.5rem);
+}
+
+.application-form {
+  max-width: 760px;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.application-form label {
+  display: grid;
+  gap: 0.55rem;
+  font-weight: 600;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+  width: 100%;
+  padding: 0.85rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--accent);
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+}
+
+.application-form select option { color: #113156; }
+.application-form textarea { resize: vertical; }
+.form-note { font-size: 0.875rem; color: var(--sun); }
+
 /* founders letter */
 
 .letter-body .mission-line + .mission-line {
@@ -795,6 +834,8 @@ img.photo-slot {
   .mentorship-grid {
     grid-template-columns: 1fr;
   }
+
+  .form-grid { grid-template-columns: 1fr; }
 
   .profile .photo-slot {
     max-width: 260px;
