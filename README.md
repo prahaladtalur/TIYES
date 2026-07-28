@@ -54,5 +54,5 @@ An older `.github/workflows/jekyll-gh-pages.yml` (GitHub Pages via Jekyll) has b
 ## Current state
 
 - International-board and chapter-team roles are shown as open while recruitment is underway.
-- The team page includes the founders’ group photo, Prahalad’s portrait, and the Professor George Anwar mentorship photo. Individual portraits for the other founders can be added when supplied.
+- The team page includes the founders’ group photo and the Professor George Anwar mentorship photo. Individual portraits can be added when supplied.
 - Chapter-interest calls to action open a pre-addressed email to `tiyesfounders@gmail.com`; the International Board application is a separate published Google Form.
