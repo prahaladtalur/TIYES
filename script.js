@@ -1,9 +1,8 @@
-// TODO: replace with the real chapter application Google Form URL
-const CHAPTER_FORM_URL = "https://forms.google.com/TODO-chapter-application";
+const CHAPTER_FORM_URL = "mailto:tiyesfounders@gmail.com?subject=TIYES%20Chapter%20Interest";
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// Wire every CTA to the form URL
+// Wire every chapter CTA to the TIYES founders.
 document.querySelectorAll("[data-form-link]").forEach((link) => {
   link.href = CHAPTER_FORM_URL;
 });

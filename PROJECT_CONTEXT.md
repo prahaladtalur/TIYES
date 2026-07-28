@@ -37,7 +37,7 @@ The site is plain static HTML, CSS, and JavaScript. It is not a framework applic
 - `board-application.html` — embeds the published Google Form
 - `ahan.html`, `rajdeep.html`, `prahalad.html`, `fabian.html`, `aarushi.html` — founder profiles
 - `dallas.html`, `dubai.html`, `seattle.html`, `washington-dc.html` — chapter pages
-- `handbook.html` — handbook/bylaws placeholder content
+- `handbook.html` — chapter handbook and bylaws
 - `styles.css` — shared styling
 - `script.js` — scroll/reveal behavior and chapter-application link handling
 - `assets/` — founding-team image, Professor Anwar mentorship image, and portrait assets
@@ -87,8 +87,8 @@ Do not commit `dist/`; it is generated output.
 ## Current content notes and follow-ups
 
 - The Professor Anwar mentorship photo remains in `team.html`; the UC Berkeley support claim was intentionally removed.
-- The chapter application URL in `script.js` is still a placeholder. The International Board form is separate and active.
-- The handbook/bylaws page needs final copy.
+- Chapter-interest calls to action open a pre-addressed email to `tiyesfounders@gmail.com`. The International Board form is separate and active.
+- The handbook/bylaws page contains the current operating guidance and governance copy.
 - International-board and chapter-team roles are currently presented as open.
 - Verify individual founder profile details and photos before expanding their profile pages.
 - When changing shared navigation, footer, or metadata, update every static HTML page as appropriate.

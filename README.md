@@ -7,7 +7,7 @@ The website for The International Youth Engineering Society — a static site, n
 ```
 index.html            Homepage
 team.html              Founders, board, and city-team structure
-handbook.html          Chapter handbook + bylaws (content still to be written)
+handbook.html          Chapter handbook + bylaws
 dallas.html            \
 dubai.html              |  City chapter pages
 seattle.html            |
@@ -51,9 +51,8 @@ npm run lint:html    # htmlhint on every *.html page
 
 An older `.github/workflows/jekyll-gh-pages.yml` (GitHub Pages via Jekyll) has been removed as superseded by the above — it predates the OpenAI Sites hosting setup and was never updated to match it.
 
-## Known gaps
+## Current state
 
-- `handbook.html` — every chapter-handbook and bylaws section is still a "To be written" placeholder.
-- Team roles — all international board seats (`team.html`) and all five per-chapter roles (Dallas, Dubai, Seattle, Washington DC) are listed as open/unfilled.
-- Founder photos — only Prahalad has a real photo (`assets/prahalad.jpg`); Ahan, Rajdeep, and Fabian still use the placeholder photo slot.
-- The chapter-application form URL in `script.js` (`CHAPTER_FORM_URL`) is a placeholder — every "Apply"/"Join" button on the site points nowhere real yet.
+- International-board and chapter-team roles are shown as open while recruitment is underway.
+- The team page includes the founders’ group photo, Prahalad’s portrait, and the Professor George Anwar mentorship photo. Individual portraits for the other founders can be added when supplied.
+- Chapter-interest calls to action open a pre-addressed email to `tiyesfounders@gmail.com`; the International Board application is a separate published Google Form.
