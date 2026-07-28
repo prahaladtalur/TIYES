@@ -519,7 +519,7 @@ img.photo-slot {
   aspect-ratio: 3 / 2;
   object-fit: cover;
   object-position: center;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgb(255 255 255 / 60%);
 }
 
 .team-photo figcaption {
@@ -635,7 +635,11 @@ iframe.application-form {
 
 .application-form select option { color: #113156; }
 .application-form textarea { resize: vertical; }
-.form-note { font-size: 0.875rem; color: var(--sun); }
+
+.form-note {
+  font-size: 0.875rem;
+  color: var(--sun);
+}
 
 /* founders letter */
 
