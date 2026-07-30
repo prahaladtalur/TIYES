@@ -20,7 +20,6 @@ styles.css             Shared stylesheet for every page
 script.js              Shared behavior: scroll reveals, schematic strip, chapter-form links
 logo.png, assets/      Images
 scripts/build.mjs      Copies the static files into dist/ for deployment
-hardware/              Unrelated MicroPython script for a Raspberry Pi Pico LED; not part of the site
 ```
 
 Every page is a plain HTML file that links the same `styles.css` and `script.js` — there's no shared templating, so a change to the nav, footer, or `<head>` has to be repeated across all 11 pages by hand.
