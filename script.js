@@ -1,4 +1,4 @@
-const CHAPTER_FORM_URL = "mailto:tiyesfounders@gmail.com?subject=TIYES%20Chapter%20Interest";
+const CHAPTER_FORM_URL = "mailto:tiyesfounders@gmail.com,ptalur09@gmail.com?subject=TIYES%20Chapter%20Interest";
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
