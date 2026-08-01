@@ -2,9 +2,10 @@ const CHAPTER_FORM_URL = "mailto:tiyesfounders@gmail.com?subject=TIYES%20Chapter
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// Wire every chapter CTA to the TIYES founders.
+// Wire city applications to their own form; the home-page CTA stays on email
+// until a separate chapter-intake inbox is chosen.
 document.querySelectorAll("[data-form-link]").forEach((link) => {
-  link.href = CHAPTER_FORM_URL;
+  link.href = link.dataset.formUrl || CHAPTER_FORM_URL;
 });
 
 // Scroll-triggered reveals, once per element
