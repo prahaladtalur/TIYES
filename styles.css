@@ -235,23 +235,6 @@ section {
   background: linear-gradient(135deg, rgb(255 255 255 / 4%), rgb(255 255 255 / 1%));
 }
 
-.map-grid path {
-  stroke: rgb(255 255 255 / 10%);
-  stroke-width: 0.8;
-}
-
-.map-grid .map-equator {
-  stroke: rgb(241 188 85 / 26%);
-}
-
-.map-land path {
-  fill: rgb(255 255 255 / 12%);
-  stroke: rgb(255 255 255 / 36%);
-  stroke-width: 0.8;
-  stroke-linejoin: round;
-  vector-effect: non-scaling-stroke;
-}
-
 .map-pin .pin-dot {
   fill: var(--sun);
 }
