@@ -1,4 +1,4 @@
-# TIYES
+# T.I.Y.E.S
 
 The website for The International Youth Engineering Society — a static site, no framework, no build-time templating.
 

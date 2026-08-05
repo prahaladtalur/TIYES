@@ -1,9 +1,9 @@
-const CHAPTER_FORM_URL = "mailto:tiyesfounders@gmail.com,ptalur09@gmail.com?subject=TIYES%20Chapter%20Interest";
+const CHAPTER_FORM_URL = "mailto:tiyesfounders@gmail.com,ptalur09@gmail.com?subject=T.I.Y.E.S%20Chapter%20Interest";
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// Wire city applications to their own form; the home-page CTA stays on email
-// until a separate chapter-intake inbox is chosen.
+// Wire city applications to their own form; the home-page CTA routes to the
+// shared chapter-intake inbox.
 document.querySelectorAll("[data-form-link]").forEach((link) => {
   link.href = link.dataset.formUrl || CHAPTER_FORM_URL;
 });
