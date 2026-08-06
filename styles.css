@@ -407,6 +407,26 @@ a.chapter-city:hover::after {
   display: block;
   aspect-ratio: 4 / 5;
   border: 1px solid rgb(255 255 255 / 60%);
+  overflow: hidden;
+}
+
+.photo-slot > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-photo-ahan {
+  object-position: 18% 45%;
+}
+
+.founder-photo-prahalad {
+  object-position: 60% 66%;
+}
+
+.founder-photo-aarushi {
+  object-position: 55% 70%;
 }
 
 .photo-slot svg {
