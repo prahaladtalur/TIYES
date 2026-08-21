@@ -603,6 +603,26 @@ img.photo-slot {
   white-space: nowrap;
 }
 
+.role-holder {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--sun);
+  border: 1px solid var(--sun);
+  padding: 0.25rem 0.6rem;
+  white-space: nowrap;
+}
+
+.role-holder a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.role-holder a:hover {
+  color: var(--ink);
+}
+
 .board-apply {
   margin-top: clamp(2rem, 5vh, 3.5rem);
 }
