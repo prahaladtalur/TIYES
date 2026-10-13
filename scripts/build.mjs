@@ -9,7 +9,7 @@ await rm(dist, { recursive: true, force: true });
 await mkdir(client, { recursive: true });
 
 for (const entry of [
-  "index.html", "styles.css", "script.js", "logo.png", "ahan.html", "aarushi.html",
+  "index.html", "competition.html", "styles.css", "script.js", "logo.png", "ahan.html", "aarushi.html",
   "dallas.html", "dubai.html", "fabian.html", "handbook.html",
   "prahalad.html", "rajdeep.html", "seattle.html", "team.html", "washington-dc.html"
 ]) {
